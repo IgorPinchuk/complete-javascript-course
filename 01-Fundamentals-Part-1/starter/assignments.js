@@ -47,7 +47,8 @@ people speak portuguese */
 console.log(population / 2);
 console.log(++population); 
 console.log(population > 6); 
-console.log(population < 33);
+const averagePopulation = 33;
+console.log(population < averagePopulation);
 let description = country + ' is in ' + continent + ', and its ' + population + ' million people speak ' + language;
 console.log(description);
 
@@ -56,3 +57,16 @@ console.log(description);
 using the template literal syntax */
 description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
 console.log(description);
+
+/* LECTURE: Taking Decisions: if / else Statements
+1. If your country's population is greater that 33 million, log a string like this to the 
+console: 'Portugal's population is above average'. Otherwise, log a string like 
+'Portugal's population is 22 million below average' (the 22 is the average of 33 
+minus the country's population)
+2. After checking the result, change the population temporarily to 13 and then to 
+130. See the different results, and set the population back to origina */
+if(population > averagePopulation){
+    console.log(`${country}'s population is above average`);
+} else {
+    console.log(`${country}'s population is ${averagePopulation - population} million below average`);
+}
