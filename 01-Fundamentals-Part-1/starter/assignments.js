@@ -48,5 +48,11 @@ console.log(population / 2);
 console.log(++population); 
 console.log(population > 6); 
 console.log(population < 33);
-const description = country + ' is in ' + continent + ', and its ' + population + ' million people speak ' + language;
+let description = country + ' is in ' + continent + ', and its ' + population + ' million people speak ' + language;
+console.log(description);
+
+/* LECTURE: Strings and Template Literals
+1. Recreate the 'description' variable from the last assignment, this time 
+using the template literal syntax */
+description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
 console.log(description);
